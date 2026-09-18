@@ -1,4 +1,4 @@
-# esp32-vl53l8cx-tof
+# vl53l8cx-tof
 
 VL53L8CX 8×8 Time-of-Flight 센서를 ESP32-S3 에서 구동하고, 측정값을 시리얼로 흘려
 PC 에서 실시간 히트맵으로 확인하는 펌웨어입니다.
