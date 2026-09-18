@@ -56,6 +56,16 @@ python tools/tof_viewer.py COM7 --max 2000   # 색상 범위 상한 (mm)
 `stm32duino/STM32duino VL53L8CX` 는 `platformio.ini` 의 `lib_deps` 로 빌드 시 내려받습니다.
 이 저장소에 vendoring 하지 않습니다.
 
+## 관련 프로젝트
+
+이 펌웨어를 확장해 **RGB 카메라와 동축으로 융합**한 프로젝트가 있습니다 —
+빔스플리터로 광축을 겹쳐 영상의 특정 지점 depth 를 읽습니다:
+**[vl53l8cx-rgb-fusion](https://github.com/do-gongil/vl53l8cx-rgb-fusion)**
+
+그쪽 펌웨어는 카메라 프레임과 짝을 맞추기 위해 타임스탬프 · `target_status` 원본 ·
+ping · LED 펄스가 추가된 프로토콜 v2 를 씁니다. 센서 하나만 돌려보는 것이 목적이라면
+이 저장소가 더 간단합니다.
+
 ## License
 
 MIT — `LICENSE` 참조.
